@@ -30,10 +30,36 @@ h1{
   gap:45px;
 }
 
-.gallery img{
+.show{
+  text-align:center;
+}
+
+.show img{
   width:100%;
   border-radius:12px;
   box-shadow:0 10px 30px rgba(0,0,0,.6);
+}
+
+.buy-text{
+  margin-top:15px;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+.buy-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 28px;
+  background:#caa14a;
+  color:#111;
+  text-decoration:none;
+  border-radius:30px;
+  font-size:15px;
+  transition:.3s;
+}
+
+.buy-btn:hover{
+  background:#e5c46a;
 }
 </style>
 </head>
@@ -43,11 +69,56 @@ h1{
 <h1>SHOWS 2026</h1>
 
 <div class="gallery">
-  <img src="show1.jpg">
-  <img src="show2.jpg">
-  <img src="show3.jpg">
-  <img src="show4.jpg">
-  <img src="show5.jpg">
+
+  <!-- San Valentín -->
+  <div class="show">
+    <img src="show1.jpg" alt="Especial San Valentín">
+  </div>
+
+  <!-- Laura Larrosa -->
+  <div class="show">
+    <img src="show2.jpg" alt="Laura Larrosa en Concierto">
+    <div class="buy-text">Comprá tus entradas online</div>
+    <a class="buy-btn"
+       href="https://evenzi.ar/e/11540126-laura-larrosa-en-concierto/Online"
+       target="_blank">
+      Comprar entradas
+    </a>
+  </div>
+
+  <!-- Hugo Robles -->
+  <div class="show">
+    <img src="show3.jpg" alt="Hugo Robles en Concierto">
+    <div class="buy-text">Comprá tus entradas online</div>
+    <a class="buy-btn"
+       href="https://evenzi.ar/e/82301029-hugo-robles-en-concierto/Online"
+       target="_blank">
+      Comprar entradas
+    </a>
+  </div>
+
+  <!-- Ximena Langone -->
+  <div class="show">
+    <img src="show4.jpg" alt="Ximena Langone en Concierto">
+    <div class="buy-text">Comprá tus entradas online</div>
+    <a class="buy-btn"
+       href="https://evenzi.ar/e/11537333-ximena-langone-en-concierto/Online"
+       target="_blank">
+      Comprar entradas
+    </a>
+  </div>
+
+  <!-- Gabriela Martiniello -->
+  <div class="show">
+    <img src="show5.jpg" alt="Gabriela Martiniello en Concierto">
+    <div class="buy-text">Comprá tus entradas online</div>
+    <a class="buy-btn"
+       href="https://evenzi.ar/e/21532212-gabriela-martiniello-en-concierto/Online"
+       target="_blank">
+      Comprar entradas
+    </a>
+  </div>
+
 </div>
 
 </body>
