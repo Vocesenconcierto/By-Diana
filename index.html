@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voces en Concierto | Clases de Canto, Shows y Home Session</title>
+
+<meta name="description" content="Voces en Concierto. Clases de canto, shows en vivo, eventos, casamientos, cumpleaños y Home Sessions con artistas. Producciones artísticas de Diana Gómez.">
+<meta name="keywords" content="voces en concierto, clases de canto, shows en vivo, home session, eventos musicales, canto, música, diana gomez">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat', sans-serif;
+}
+
+body{
+  color:#111;
+  background-color:#ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.04'%3E%3Cpath d='M40 20h6v50a12 12 0 1 1-6-10zM70 10h6v45a12 12 0 1 1-6-10z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* HEADER */
+header.hero{
+  background-image:url('header.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  min-height:280px;
+  padding:20px;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  height:95px;
+}
+
+/* MAIN */
+main{
+  padding:40px 20px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:26px;
+  margin-bottom:35px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card .info{
+  padding:18px;
+}
+
+.card h3{
+  font-size:18px;
+  font-weight:700;
+}
+
+.card p{
+  font-size:14px;
+  color:#666;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:12px;
+  font-size:12px;
+  font-weight:700;
+  color:#caa14a;
+}
+
+/* TEXTO */
+.descripcion{
+  text-align:center;
+  max-width:800px;
+  margin:30px auto;
+  color:#555;
+  font-size:15px;
+}
+
+/* REDES */
+.floating-social{
+  position:fixed;
+  right:15px;
+  bottom:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:999;
+}
+
+.floating-social a{
+  color:#fff;
+  padding:10px 14px;
+  border-radius:25px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  text-align:center;
+}
+
+.whatsapp{background:#25D366;}
+.instagram{background:#C13584;}
+.youtube{background:#FF0000;}
+.facebook{background:#1877F2;}
+
+/* FOOTER */
+footer{
+  padding:20px;
+  text-align:center;
+  font-size:13px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="topbar">
+    <div class="logo">
+      <img src="logo.png" alt="Voces en Concierto">
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="section-title">Lo último</div>
+
+  <p class="descripcion">
+    Voces en Concierto es un espacio dedicado a la formación vocal, shows en vivo y producciones musicales.
+    Clases de canto, Home Sessions y presentaciones para eventos, casamientos y cumpleaños.
+  </p>
+
+  <div class="grid">
+
+    <!-- CLASES DE CANTO -->
+    <a href="clases-canto.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <img src="Clases-canto.jpg" alt="Clases de canto">
+        <div class="info">
+          <h3>Clases de canto</h3>
+          <p>Inscripciones abiertas</p>
+          <span class="tag">ESCUELA</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- SHOWS 2026 -->
+    <a href="shows-2026.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <img src="shows-2026.jpg" alt="Shows 2026">
+        <div class="info">
+          <h3>Shows 2026</h3>
+          <p>Galería de eventos</p>
+          <span class="tag">SHOWS</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- HOME SESSION -->
+    <a href="home-session.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <img src="homesession.jpg" alt="Home Session">
+        <div class="info">
+          <h3>Home Session</h3>
+          <p>Sesiones íntimas</p>
+          <span class="tag">MÚSICA</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- CONTRATACIONES -->
+    <a href="contrataciones.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <img src="u.jpg" alt="Contrataciones">
+        <div class="info">
+          <h3>Contrataciones</h3>
+          <p>Shows · Casamientos · Cumpleaños</p>
+          <span class="tag">EVENTOS</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+© 2026 Voces en Concierto · Producciones Artísticas · Diana Gómez
+</footer>
+
+<div class="floating-social">
+  <a class="whatsapp" href="https://wa.me/5491169762707" target="_blank">WhatsApp</a>
+  <a class="instagram" href="https://www.instagram.com/vocesenconcierto" target="_blank">Instagram</a>
+  <a class="youtube" href="https://youtube.com/@dianagomez-df6qy" target="_blank">YouTube</a>
+  <a class="facebook" href="https://www.facebook.com/share/1A4sjdCUPa/" target="_blank">Facebook</a>
+</div>
+
+</body>
+</html>
