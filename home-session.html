@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Session – Voces en Concierto</title>
+<title>Home Session | Voces en Concierto</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -16,86 +16,90 @@
 }
 
 body{
-  background:#f5f5f5;
-  color:#111;
+  background:#111;
+  color:#fff;
 }
 
 header{
   text-align:center;
-  padding:30px 20px;
+  padding:40px 20px;
 }
 
 header h1{
-  font-size:30px;
-  margin-bottom:10px;
+  font-size:32px;
+  letter-spacing:2px;
 }
 
 header p{
-  color:#666;
+  color:#bbb;
+  margin-top:8px;
 }
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-  padding:30px 20px 60px;
   max-width:1200px;
   margin:auto;
+  padding:30px 20px 60px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
 }
 
 .card{
-  background:#fff;
-  border-radius:14px;
+  background:#1c1c1c;
+  border-radius:16px;
   padding:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  box-shadow:0 15px 35px rgba(0,0,0,.6);
 }
 
-.video-wrapper{
+.video{
   position:relative;
   padding-top:56.25%;
-  border-radius:10px;
+  border-radius:12px;
   overflow:hidden;
 }
 
-.video-wrapper iframe{
+.video iframe{
   position:absolute;
-  top:0;
-  left:0;
+  inset:0;
   width:100%;
   height:100%;
 }
 
 .info{
-  margin-top:15px;
   text-align:center;
+  margin-top:15px;
 }
 
 .info h3{
   font-size:16px;
-  font-weight:700;
+  font-weight:800;
 }
 
 .info span{
   display:block;
-  font-size:13px;
-  color:#caa14a;
   margin-top:4px;
+  font-size:13px;
+  color:#d4af37;
 }
 
 .info a{
   display:inline-block;
-  margin-top:8px;
+  margin-top:10px;
   font-size:13px;
-  color:#cc0000;
-  font-weight:600;
+  color:#ff4d4d;
   text-decoration:none;
+  font-weight:600;
+}
+
+.info a:hover{
+  text-decoration:underline;
 }
 
 footer{
   text-align:center;
   padding:20px;
   font-size:13px;
-  color:#777;
+  color:#888;
 }
 </style>
 </head>
@@ -103,125 +107,143 @@ footer{
 <body>
 
 <header>
-  <h1>Home Session</h1>
-  <p>Sesiones íntimas · Voces en Concierto</p>
+  <h1>HOME SESSION</h1>
+  <p>Voces en Concierto</p>
 </header>
 
 <div class="grid">
 
-  <!-- NUEVOS -->
-
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/rKfd8_y_irk"></iframe>
-    </div>
-    <div class="info">
-      <h3>Nadia Suárez</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/rKfd8_y_irk" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #1 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/9_Ak_YwmWaw" allowfullscreen></iframe>
   </div>
-
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/1IT97tC70hw"></iframe>
-    </div>
-    <div class="info">
-      <h3>Mónica Lezcano</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/1IT97tC70hw" target="_blank">Ver en YouTube</a>
-    </div>
+  <div class="info">
+    <h3>Rodrigo Lanza</h3>
+    <span>Home #1</span>
+    <a href="https://youtu.be/9_Ak_YwmWaw" target="_blank">Ver en YouTube</a>
   </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/NjG8v01y04g"></iframe>
-    </div>
-    <div class="info">
-      <h3>Rodrigo Lanza</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/NjG8v01y04g" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #2 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/9B4LhpANf_Q" allowfullscreen></iframe>
   </div>
-
-  <!-- LOS QUE YA TENÍAS -->
-
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/9_Ak_YwmWaw"></iframe>
-    </div>
-    <div class="info">
-      <h3>Rodrigo Lanza</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/9_Ak_YwmWaw" target="_blank">Ver en YouTube</a>
-    </div>
+  <div class="info">
+    <h3>Evelin Bach</h3>
+    <span>Home #2</span>
+    <a href="https://youtu.be/9B4LhpANf_Q" target="_blank">Ver en YouTube</a>
   </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/9B4LhpANf_Q"></iframe>
-    </div>
-    <div class="info">
-      <h3>Evelin Bach</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/9B4LhpANf_Q" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #3 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/p5eWMW5T-oY" allowfullscreen></iframe>
   </div>
+  <div class="info">
+    <h3>Laura Larrosa</h3>
+    <span>Home #3</span>
+    <a href="https://youtu.be/p5eWMW5T-oY" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/p5eWMW5T-oY"></iframe>
-    </div>
-    <div class="info">
-      <h3>Laura Larrosa</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/p5eWMW5T-oY" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #4 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/uLKBhU4dzKc" allowfullscreen></iframe>
   </div>
+  <div class="info">
+    <h3>Haydée Dávila</h3>
+    <span>Home #4</span>
+    <a href="https://youtu.be/uLKBhU4dzKc" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/uLKBhU4dzKc"></iframe>
-    </div>
-    <div class="info">
-      <h3>Haydée Dávila</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/uLKBhU4dzKc" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #5 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/984pLeCdEC4" allowfullscreen></iframe>
   </div>
+  <div class="info">
+    <h3>Elías Otegui</h3>
+    <span>Home #5</span>
+    <a href="https://youtu.be/984pLeCdEC4" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/984pLeCdEC4"></iframe>
-    </div>
-    <div class="info">
-      <h3>Elías Otegui</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/984pLeCdEC4" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #6 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/roVTaaG7Pjg" allowfullscreen></iframe>
   </div>
+  <div class="info">
+    <h3>Miguel Ángel Garayo</h3>
+    <span>Home #6</span>
+    <a href="https://youtu.be/roVTaaG7Pjg" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/roVTaaG7Pjg"></iframe>
-    </div>
-    <div class="info">
-      <h3>Miguel Ángel Garayo</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/roVTaaG7Pjg" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #7 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/id3iBrGIpeo" allowfullscreen></iframe>
   </div>
+  <div class="info">
+    <h3>Carlina Pasini</h3>
+    <span>Home #7</span>
+    <a href="https://youtu.be/id3iBrGIpeo" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/id3iBrGIpeo"></iframe>
-    </div>
-    <div class="info">
-      <h3>Carlina Pasini</h3>
-      <span># Home Session</span>
-      <a href="https://youtu.be/id3iBrGIpeo" target="_blank">Ver en YouTube</a>
-    </div>
+<!-- Home #8 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/rKfd8_y_irk" allowfullscreen></iframe>
   </div>
+  <div class="info">
+    <h3>Nadia Suárez</h3>
+    <span>Home #8</span>
+    <a href="https://youtu.be/rKfd8_y_irk" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
+
+<!-- Home #9 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/1IT97tC70hw" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+    <h3>Mónica Lezcano</h3>
+    <span>Home #9</span>
+    <a href="https://youtu.be/1IT97tC70hw" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
+
+<!-- Home #10 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/aHUPxSsFdTc" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+    <h3>Rodrigo Lanza</h3>
+    <span>Home #10</span>
+    <a href="https://youtu.be/aHUPxSsFdTc" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
+
+<!-- Home #11 -->
+<div class="card">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/RFVVQph8x7M" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+    <h3>Norah</h3>
+    <span>Home #11</span>
+    <a href="https://youtu.be/RFVVQph8x7M" target="_blank">Ver en YouTube</a>
+  </div>
+</div>
 
 </div>
 
