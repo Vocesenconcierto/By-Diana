@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trabajá con Nosotros | Voces en Concierto</title>
+<title>Trabajá con nosotros | Voces en Concierto</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -16,23 +16,31 @@
   font-family:'Montserrat', sans-serif;
 }
 
+/* FONDO CON MICRÓFONOS Y NOTAS */
 body{
-  background:#f4f4f4;
-  padding:40px 20px;
+  background-color:#ffffff;
+  background-image:url("data:image/svg+xml,%3Csvg width='140' height='140' viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.04'%3E%3Cpath d='M70 20a10 10 0 0 1 10 10v30a10 10 0 0 1-20 0V30a10 10 0 0 1 10-10zm-6 40h12v10a16 16 0 0 1-32 0h6a10 10 0 0 0 20 0zM30 30h6v45a12 12 0 1 1-6-10zM100 25h6v40a12 12 0 1 1-6-10z'/%3E%3C/g%3E%3C/svg%3E");
+  color:#111;
+}
+
+/* CONTENIDO */
+main{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
 }
 
 h1{
   text-align:center;
+  font-size:30px;
   margin-bottom:40px;
-  font-size:28px;
 }
 
+/* GRID */
 .grid{
-  max-width:800px;
-  margin:auto;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  gap:30px;
 }
 
 .card{
@@ -40,8 +48,11 @@ h1{
   border-radius:14px;
   overflow:hidden;
   box-shadow:0 10px 25px rgba(0,0,0,.12);
-  text-decoration:none;
-  color:#111;
+  transition:transform .3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
 }
 
 .card img{
@@ -57,32 +68,47 @@ h1{
 
 .card h3{
   font-size:20px;
-  font-weight:700;
+  margin-bottom:8px;
 }
 
 .card p{
   font-size:14px;
   color:#666;
-  margin-top:8px;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:10px;
+  font-size:12px;
+  font-weight:700;
+  color:#caa14a;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Trabajá con Nosotros</h1>
+<main>
 
-<div class="grid">
+  <h1>Trabajá con nosotros</h1>
 
-  <a href="preparadores-vocales.html" target="_blank" class="card">
-    <img src="preparadores.jpg" alt="Preparadores Vocales">
-    <div class="info">
-      <h3>Preparadores Vocales</h3>
-      <p>Conocé a nuestros profesionales</p>
-    </div>
-  </a>
+  <div class="grid">
 
-</div>
+    <!-- PREPARADORES VOCALES -->
+    <a href="preparadores-vocales.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <img src="preparadores-vocales.jpg" alt="Preparadores vocales">
+        <div class="info">
+          <h3>Preparadores vocales</h3>
+          <p>Formación · Técnica · Experiencia</p>
+          <span class="tag">VOCES EN CONCIERTO</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+</main>
 
 </body>
 </html>
