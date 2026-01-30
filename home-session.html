@@ -22,7 +22,7 @@ body{
 
 header{
   text-align:center;
-  padding:40px 20px;
+  padding:40px 20px 20px;
 }
 
 header h1{
@@ -35,10 +35,39 @@ header p{
   margin-top:8px;
 }
 
+/* BLOQUE TEXTO PROMO */
+.promo{
+  max-width:900px;
+  margin:0 auto 30px;
+  padding:25px 20px;
+  line-height:1.6;
+  font-size:14px;
+  color:#eee;
+  white-space:pre-line;
+  text-align:center;
+}
+
+.boton-promo{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.boton-promo a{
+  display:inline-block;
+  background:#25D366;
+  color:#fff;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* GRID VIDEOS */
 .grid{
   max-width:1200px;
   margin:auto;
-  padding:30px 20px 40px;
+  padding:30px 20px 60px;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   gap:30px;
@@ -95,42 +124,21 @@ header p{
   text-decoration:underline;
 }
 
-/* BLOQUE PROMO */
-
-.promo{
-  max-width:900px;
-  margin:0 auto 40px;
-  padding:25px 20px;
-  text-align:left;
-  white-space:pre-line;
-  font-size:15px;
-  line-height:1.6;
-  color:#eee;
-}
-
-.promo-botones{
+/* BOTON VOLVER */
+.volver{
   text-align:center;
-  margin-bottom:40px;
+  padding-bottom:50px;
 }
 
-.promo-botones a{
+.volver a{
   display:inline-block;
-  margin:10px 8px;
-  padding:14px 28px;
+  background:#ffffff;
+  color:#111;
+  padding:14px 30px;
   border-radius:30px;
   text-decoration:none;
   font-weight:700;
   font-size:14px;
-}
-
-.btn-wpp{
-  background:#25D366;
-  color:#fff;
-}
-
-.btn-volver{
-  background:#333;
-  color:#fff;
 }
 
 footer{
@@ -148,6 +156,30 @@ footer{
   <h1>HOME SESSION</h1>
   <p>Voces en Concierto</p>
 </header>
+
+<div class="promo">
+🎙️VENI A GRABAR CON NOSOTROS ESE TEMA QUE SIEMPRE QUISISTE REGISTRAR!!
+
+🎶Gracias al enorme exito de la convocatoria agregamos fechas en Febrero!!!!! 🎶
+
+👉1-Tenes que elegir una canción que tengas super cantada.
+
+👉 2-Una vez que tengamos la pista grabada de calidad, al piano, y confeccionada especialmente para vos, te la pasamos para que la puedas estudiar. 
+
+👉3-El sabado 7 de febrero tenemos 2 lugares para grabar 3 tomas en audio y video para poder elegir la mejor en expresión y desempeño vocal. 
+
+👉4-Son 4 cantantes por sesión para dar aire entre toma y toma a cada interprete. 
+
+👉5-El valor es de $49000!!!!
+
+👉6- Reserva tu vacante por el total al Alias: sopranodiana, y ya estas registrado!!
+
+🗒️ A disposición para cualquier duda.
+</div>
+
+<div class="boton-promo">
+  <a href="https://wa.me/5491169762707" target="_blank">Información</a>
+</div>
 
 <div class="grid">
 
@@ -285,35 +317,9 @@ footer{
 
 </div>
 
-<!-- TEXTO FINAL -->
-
-<div class="promo">
-🎙️VENI A GRABAR CON NOSOTROS ESE TEMA QUE SIEMPRE QUISISTE REGISTRAR!!
-
-🎶Gracias al enorme exito de la convocatoria agregamos fechas en Febrero!!!!! 🎶
-
-👉1-Tenes que elegir una canción que tengas super cantada.
-
-👉 2-Una vez que tengamos la pista grabada de calidad, al piano, y confeccionada especialmente para vos, te la pasamos para que la puedas estudiar. 
-
-👉3-El sabado 7 de febrero tenemos 2 lugares para grabar 3 tomas en audio y video para poder elegir la mejor en expresión y desempeño vocal. 
-
-👉4-Son 4 cantantes por sesión para dar aire entre toma y toma a cada interprete. 
-
-👉5-El valor es de $49000!!!!
-
-👉6- Reserva tu vacante por el total al Alias: sopranodiana, y ya estas registrado!!
-
-🗒️ A disposición para cualquier duda.
-</div>
-
-<div class="promo-botones">
-  <a class="btn-wpp" href="https://wa.me/5491169762707" target="_blank">
-    Consultas
-  </a>
-
-  <a class="btn-volver" href="https://vocesenconcierto.github.io/By-Diana/">
-    Regresar a la página principal de Voces en Concierto
+<div class="volver">
+  <a href="https://vocesenconcierto.github.io/By-Diana/" target="_self">
+    Regresar a la página principal Voces en Concierto By Diana Gómez
   </a>
 </div>
 
